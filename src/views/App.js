@@ -14,7 +14,6 @@ componentDidUpdate() {
 
 
   render() {
-	var items = this.props.my_store.fetch.map();
     return (
       <div className="App">
         <header className="App-header">
@@ -23,7 +22,6 @@ componentDidUpdate() {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-	{this.listem()}
       </div>
     );
   }
