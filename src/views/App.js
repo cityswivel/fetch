@@ -5,11 +5,10 @@ import {itemsFetchData} from '../actions';
 class App extends Component {
 componentDidMount() {
 	this.props.onTodoClick('https://api.cityswivel.com/list_tourpoints');
+	this.props.onTodoClick('https://api.cityswivel.com/list_events');
 
-	console.log(this.props);
 }
 componentDidUpdate() {
-	console.log(this.props);
 }
 
 
@@ -22,6 +21,7 @@ componentDidUpdate() {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+	<span onClick={() => {this.props.onTodoClick('https://api.cityswivel.com/list_events')}}>click</span>
       </div>
     );
   }
